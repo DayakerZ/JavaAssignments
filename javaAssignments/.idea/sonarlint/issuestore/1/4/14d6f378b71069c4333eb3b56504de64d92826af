@@ -1,0 +1,15 @@
+
+^
+java:S1854
+"<Remove this useless assignment to local variable "tricycle".(¦İËËüÿÿÿÿ8ºÍäÖ/
+X
+java:S1854";Remove this useless assignment to local variable "bicycle".(±µŠÆ8¦äÖ/
+Y
+java:S1854"<Remove this useless assignment to local variable "unicycle".(Øõ×8´ÌäÖ/
+J
+java:S1481"-Remove this unused "unicycle" local variable.(Øõ×8“¦äÖ/
+I
+java:S1481",Remove this unused "bicycle" local variable.(±µŠÆ8é¦äÖ/
+O
+java:S1481
+"-Remove this unused "tricycle" local variable.(¦İËËüÿÿÿÿ8ƒË‘äÖ/

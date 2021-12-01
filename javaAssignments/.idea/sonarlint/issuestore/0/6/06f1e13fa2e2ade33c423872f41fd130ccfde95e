@@ -1,0 +1,15 @@
+
+£
+java:S1186
+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ûÏ„Èøÿÿÿÿ8Õ–Æ×/
+T	java:S106"9Replace this use of System.out or System.err by a logger.(·ºœ8ç–Æ×/
+]
+java:S1126""AReplace this if-then-else statement by a single return statement.(ïĞ“a8é–Æ×/
+[
+java:S1854+"9Remove this useless assignment to local variable "files".(Ğú´™ûÿÿÿÿ8ì–Æ×/
+^
+java:S1075*"ARefactor your code to get this URI from a customizable parameter.(ŞµàÖ8û–Æ×/
+L
+java:S1481+"*Remove this unused "files" local variable.(Ğú´™ûÿÿÿÿ8ş–Æ×/
+Z	java:S106."9Replace this use of System.out or System.err by a logger.(Š—Ã¤ùÿÿÿÿ8—Æ×/
+Z	java:S1063"9Replace this use of System.out or System.err by a logger.(æ øÿÿÿÿ8„—Æ×/

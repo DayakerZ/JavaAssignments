@@ -1,0 +1,20 @@
+
+P
+java:S1172"3Remove this unused method parameter "interfaceOne".(Êâêè8µïµãÖ/
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÂëÅÍ
+P
+java:S1172"3Remove this unused method parameter "interfaceTwo".(æŸÜ8»ïµãÖ/
+S	java:S106	"9Replace this use of System.out or System.err by a logger.(¢’¢øÿÿÿÿ
+P
+java:S1172"3Remove this unused method parameter "interfaceTwo".(ËÃ˜š8ÀïµãÖ/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¾ÄîÉşÿÿÿÿ
+P
+java:S1172"3Remove this unused method parameter "interfaceTwo".(›¾¿8ÅïµãÖ/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(…ı¿üÿÿÿÿ
+U	java:S106"9Replace this use of System.out or System.err by a logger.(é›ç†8Øû¶ãÖ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(“Æôûÿÿÿÿ8¹ãÖ/
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(Ğ‡Öã8©à¹ãÖ/
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(‹Âõ8Ã»ãÖ/
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(µØ¶àüÿÿÿÿ8¥¬¼ãÖ/
+Z	java:S106/"9Replace this use of System.out or System.err by a logger.(ÍÖôıÿÿÿÿ8ğõ¼ãÖ/
+Z	java:S1064"9Replace this use of System.out or System.err by a logger.(®ı°¿ÿÿÿÿÿ8¯‡¿ãÖ/

@@ -1,0 +1,10 @@
+
+U
+java:S1854":Remove this useless assignment to local variable "period".(¾²¯´øÿÿÿÿ
+F
+java:S1481"+Remove this unused "period" local variable.(¾²¯´øÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(±ãäùÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.( äëÒşÿÿÿÿ
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(±ãäùÿÿÿÿ
+N	java:S106("9Replace this use of System.out or System.err by a logger.(†œª
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(ì¤ùÔùÿÿÿÿ
