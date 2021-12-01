@@ -2,7 +2,7 @@ package com.assignment10;
 
 public class SList<T>{
 
-    SList<T> next;
+    SList next;
     T data;
     SList(){
         next = null;
@@ -11,5 +11,9 @@ public class SList<T>{
         SListIterator listIterator = new SListIterator(next);
         return listIterator;
     }
+    public String toString(){
+        return data +"";
+    }
+
 }
 

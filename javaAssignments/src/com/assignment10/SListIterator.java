@@ -10,7 +10,7 @@ public class SListIterator {
         this.head = head;
         tail = head;
     }
-    public <T> void add(T value) {
+    public void add(Object value) {
 
         SList newNode = new SList<>();
         newNode.data = value;
@@ -51,13 +51,13 @@ public class SListIterator {
         String string = "";
         if(temp!=null) {
             while (temp.next!= null) {
-                string += temp.data + ",";
-                temp = temp.next;
+                string += temp.toString()+",";
+                temp= temp.next;
             }
-            string += temp.data;
+            string += temp.toString();
             return "[ "+string+" ]";
         }
-        return "[ "+string+" ]";
+        return temp.toString();
     }
 
 }

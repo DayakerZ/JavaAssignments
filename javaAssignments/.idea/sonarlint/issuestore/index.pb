@@ -19,8 +19,6 @@ W
 'src/com/assignment7/cycle/Unicycle.java,9/6/96e68aacf739dc2661e525c208f9e86a48284988
 T
 $src/com/assignment2/Assignment2.java,a/f/af163d0691f76411c15ef8f911f77995b595684c
-d
-4src/com/assignment6/vampirenumber/VampireNumber.java,b/7/b7c3b4f83c6e4ea9d9d0ab317f3c44416bbccac2
 `
 0src/com/assignment6/constructor/Constructor.java,d/9/d9afe203b3494f8ec8508476e05246b7bb47754d
 t
@@ -68,12 +66,4 @@ V
 V
 &src/dayaker/assignment5/data/Data.java,d/9/d9b3ce94ba3ec9a493502053616a26e4a1471dc6
 T
-$src/com/assignment3/Assignment3.java,f/8/f8cb8175114c07c61ca72a185e032b206e8ac7e5
-T
 $src/com/assignment4/Assignment4.java,8/7/87edc6abbd493668a825e2b7619be9545b30658b
-T
-$src/com/assignment1/Assignment1.java,0/6/06f1e13fa2e2ade33c423872f41fd130ccfde95e
-O
-src/com/assignment11/output.txt,4/9/4935acfdf685180010cb47c7f1f33dfcc9b36c39
-N
-src/com/assignment11/input.txt,9/9/990579d27dea795f20cfb9610e9a3213cb5cecc8
