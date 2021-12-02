@@ -11,56 +11,66 @@ public class LamdasAndStreams {
         List<Student> studentList = getStudents();
         //1.
         System.out.println("Departments in College : ");
-        studentList.stream().map(i->i.engDepartment).collect(Collectors.toSet()).forEach(System.out::println);
+        var listOfDepartments = studentList.stream().map(student->student.engDepartment).collect(Collectors.toSet());
+        listOfDepartments.forEach(System.out::println);
+        System.out.println();
 
         //2.
         System.out.println("Names of students enrolled after 2018 : ");
-        List<String> departmentList = studentList.stream().filter(i->i.yearOfEnrollment>2018).map(i->i.name).collect(Collectors.toList());
-        studentList.stream().filter(i->i.yearOfEnrollment>2018).map(i->i.name).collect(Collectors.toList()).forEach(System.out::println);
+        //var departmentList = studentList.stream().filter(i->i.yearOfEnrollment>2018).map(i->i.name).collect(Collectors.toList());
+        studentList.stream().filter(student->student.yearOfEnrollment>2018).map(student->student.name).collect(Collectors.toList()).forEach(System.out::println);
+        System.out.println();
 
         //3.
         System.out.println("Male students pursuing Computer Science : ");
-        studentList.stream().filter(i->i.gender.equals("Male") && i.engDepartment.equals("Computer Science")).map(i->i.id+":"+i.name).collect(Collectors.toList()).forEach(System.out::println);
+        studentList.stream().filter(student->student.gender.equals("Male") && student.engDepartment.equals("Computer Science")).map(student->student.id+":"+student.name).collect(Collectors.toList()).forEach(System.out::println);
+        System.out.println();
 
         //4.
         System.out.println("Male and Female Count :");
-        var maleCount = studentList.stream().collect(Collectors.groupingBy(i->i.gender)).get("Male").size();
-        var femaleCount = studentList.stream().collect(Collectors.groupingBy(i->i.gender)).get("Female").size();
+        var maleCount = studentList.stream().collect(Collectors.groupingBy(student->student.gender)).get("Male").size();
+        var femaleCount = studentList.stream().collect(Collectors.groupingBy(student->student.gender)).get("Female").size();
         System.out.println("Male : "+maleCount+" Female : "+femaleCount);
+        System.out.println();
 
         //5.
         System.out.println("Average age of male and female");
-        var sumOfMaleAges = studentList.stream().filter(i->i.gender.equals("Male")).mapToInt(i->i.age).sum();
-        var sumOfFemaleAges = studentList.stream().filter(i->i.gender.equals("Female")).mapToInt(i->i.age).sum();
+        var sumOfMaleAges = studentList.stream().filter(student->student.gender.equals("Male")).mapToInt(student->student.age).sum();
+        var sumOfFemaleAges = studentList.stream().filter(student->student.gender.equals("Female")).mapToInt(student->student.age).sum();
         System.out.println("Average male age : "+(sumOfMaleAges/maleCount)+"\n"+"Average female age : " + (sumOfFemaleAges/femaleCount));
+        System.out.println();
 
         //6.
         System.out.println("Student having highest percentage : ");
-        System.out.println( studentList.stream().min((i,j)->i.perTillDate>j.perTillDate?-1:+1).get().toString());
+        System.out.println( studentList.stream().min((studenti,studentj)->studenti.perTillDate>studentj.perTillDate?-1:+1).get().toString());
+        System.out.println();
 
         //7.
         System.out.println("Number of students in each department : ");
-        var studentsInDepartment = studentList.stream().collect(Collectors.groupingBy(i->i.engDepartment,Collectors.counting()));
+        var studentsInDepartment = studentList.stream().collect(Collectors.groupingBy(student->student.engDepartment,Collectors.counting()));
         System.out.println(studentsInDepartment);
+        System.out.println();
 
         //8.
         System.out.println("Average percentage achieved in each department: ");
-        for (String dep:studentList.stream().map(i->i.engDepartment).collect(Collectors.toSet()))
+        for (String dep:listOfDepartments)
         {
-            var computerScience=  studentList.stream().filter(i->i.engDepartment.equals(dep)).mapToDouble(i->i.perTillDate).sum();
+            var computerScience=  studentList.stream().filter(student->student.engDepartment.equals(dep)).mapToDouble(student->student.perTillDate).sum();
             var average = computerScience/studentsInDepartment.get(dep);
             System.out.println(dep+" : " + average);
         }
+        System.out.println();
 
         //9.
         System.out.println("Details of youngest Male student in Electronic Department");
-        var minAgeInElectronic = studentList.stream().filter(i->i.engDepartment.equals("Electronic") && i.gender.equals("Male") ).collect(Collectors.minBy((i,j)->i.age< j.age?-1:i.age>j.age?+1:0)).get();
+        var minAgeInElectronic = studentList.stream().filter(student->student.engDepartment.equals("Electronic") && student.gender.equals("Male") ).collect(Collectors.minBy((studenti,studentj)->studenti.age< studentj.age?-1:studenti.age>studentj.age?+1:0)).get();
         System.out.println(minAgeInElectronic.toString());
+        System.out.println();
 
         //10.
         System.out.println("Male and Female Count in Computer Science department:");
-        var maleCountInComputerScienceDepartment = studentList.stream().filter(i->i.engDepartment.equals("Computer Science")).collect(Collectors.groupingBy(i->i.gender)).get("Male").size();
-        var femaleCountInComputerScienceDepartment = studentList.stream().filter(i->i.engDepartment.equals("Computer Science")).collect(Collectors.groupingBy(i->i.gender)).get("Female").size();
+        var maleCountInComputerScienceDepartment = studentList.stream().filter(student->student.engDepartment.equals("Computer Science")).collect(Collectors.groupingBy(i->i.gender)).get("Male").size();
+        var femaleCountInComputerScienceDepartment = studentList.stream().filter(student->student.engDepartment.equals("Computer Science")).collect(Collectors.groupingBy(i->i.gender)).get("Female").size();
         System.out.println("Male : "+maleCountInComputerScienceDepartment+" Female : "+femaleCountInComputerScienceDepartment);
 
     }

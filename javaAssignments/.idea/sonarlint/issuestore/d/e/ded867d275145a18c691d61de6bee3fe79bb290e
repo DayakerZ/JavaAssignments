@@ -1,0 +1,26 @@
+
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(Åº¹Üûÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(±ÜÅ¨úÿÿÿÿ
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(ÒÃœ¢úÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(²²÷äÿÿÿÿÿ
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(æ¯õ
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(šÛã¹
+S	java:S106H"9Replace this use of System.out or System.err by a logger.(ìÚ¢¤üÿÿÿÿ
+N	java:S106L"9Replace this use of System.out or System.err by a logger.(‘ŸïÞ
+N	java:S106P"9Replace this use of System.out or System.err by a logger.(±è…±
+N	java:S106T"9Replace this use of System.out or System.err by a logger.(½¥»Â
+S	java:S106W"9Replace this use of System.out or System.err by a logger.(ª‹ûõøÿÿÿÿ
+U	java:S106`"9Replace this use of System.out or System.err by a logger.(‚¨Ö§8Ë°—â×/
+N
+java:S1128"3Remove this unused import 'java.security.Identity'.(Û÷×Ûûÿÿÿÿ
+J
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëÝüÿÿÿÿ
+O
+java:S1128"9Remove this unused import 'java.util.function.Predicate'.(ïÍ–¶
+J
+java:S1128	"4Remove this unused import 'java.util.stream.Stream'.(ó÷Ž”
+e
+java:S3655H"JCall "first.isPresent()" or "!first.isEmpty()" before accessing the value.(ìÚ¢¤üÿÿÿÿ
+n
+java:S3655W"LCall "reduce.isPresent()" or "!reduce.isEmpty()" before accessing the value.(ª‹ûõøÿÿÿÿ8ßÖ™â×/

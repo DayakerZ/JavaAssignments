@@ -1,7 +1,7 @@
 package com.assignment10;
 
 
-public class SListIterator {
+public class SListIterator<T> {
 
     SList head;
     SList tail;
@@ -10,7 +10,7 @@ public class SListIterator {
         this.head = head;
         tail = head;
     }
-    public void add(Object value) {
+    public void add(T value) {
 
         SList newNode = new SList<>();
         newNode.data = value;
@@ -46,7 +46,7 @@ public class SListIterator {
             length--;
         }
     }
-    public String show(){
+    public String toString(){
         SList temp = head;
         String string = "";
         if(temp!=null) {
