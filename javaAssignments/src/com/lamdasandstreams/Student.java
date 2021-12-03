@@ -17,6 +17,33 @@ public class Student{
         this.yearOfEnrollment = yearOfEnrollment;
         this.perTillDate = perTillDate;
     }
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public double getPerTillDate() {
+        return perTillDate;
+    }
+
+    public int getYearOfEnrollment() {
+        return yearOfEnrollment;
+    }
+
+    public String getEngDepartment() {
+        return engDepartment;
+    }
+
+    public String getGender() {
+        return gender;
+    }
     public String toString(){
         return "Name:"+name+"\nid:"+id+"\nage:"+age+"\ngender:"+gender+"\nDepartment:"
                 +engDepartment+"\nEnrollment Year:"+yearOfEnrollment+"\nPercentage:"+perTillDate;

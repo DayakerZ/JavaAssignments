@@ -1,6 +1,6 @@
 package com.lambdasandstremspractice;
 
-import java.security.Identity;
+
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.function.Predicate;
@@ -53,13 +53,13 @@ public class MoreStreams {
         System.out.println();
 
         //2.
-        var moviesWithHighestRating = movies.stream().map(movie -> movie.rating).max((i,j)->i.compareTo(j));
+        var moviesWithHighestRating = movies.stream().map(movie -> movie.rating).max(Double::compareTo);
         if (moviesWithHighestRating.isPresent())
             System.out.println(moviesWithHighestRating.get());
         else
             System.out.println("invalid");
 
-        var numberOfMoviesReleasedInEachYear = movies.stream().collect(Collectors.groupingBy(i->i.releaseYear,Collectors.counting()));
+        var numberOfMoviesReleasedInEachYear = movies.stream().collect(Collectors.groupingBy(Movies::getReleaseYear,Collectors.counting()));
         System.out.println(numberOfMoviesReleasedInEachYear);
 
         var allYears = movies.stream().map(Movies::getReleaseYear).distinct().limit(3).collect(toList());
